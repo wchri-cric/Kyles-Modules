@@ -1,0 +1,2 @@
+/* The css file to be injected into the head of selected surveys - will prevent the body from displaying any text when printed*/
+body {display: none;}

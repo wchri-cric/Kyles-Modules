@@ -1,0 +1,29 @@
+{
+    "name": "Disable Print",
+    "namespace": "Disable_Print_Namespace\\Disable_Print",
+    "description": "This module allows you to select surveys via checkboxes, and selected surveys will not be able to be printed.",
+    "authors": [
+        {
+            "name": "Kyle Androschuk",
+            "email": "kandrosc@ualberta.ca",
+            "institution": "University of Alberta - WCHRI"
+        }
+    ],
+    "permissions": [
+        "redcap_every_page_before_render",
+        "redcap_survey_page_top",
+        "redcap_module_project_enable",
+        "redcap_module_project_disable",
+        "redcap_module_system_enable",
+        "redcap_module_system_disable"
+    ],
+    "links": {
+        "project": [
+            {
+                "name": "Disable Survey Printing",
+                "icon": "..\/..\/..\/modules\/Disable_Print_v1.0\/Disable_Print_Logo",
+                "url": "print_menu.php"
+            }
+        ]
+    }
+}

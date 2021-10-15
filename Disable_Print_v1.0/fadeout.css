@@ -1,0 +1,11 @@
+/* Handles the animated green 'Submitted' text */
+
+#fadeout {
+	color: limegreen;
+	display: inline;
+	animation: fade 1.5s linear forwards;
+}
+
+@keyframes fade {
+	100% {opacity:0;}
+}

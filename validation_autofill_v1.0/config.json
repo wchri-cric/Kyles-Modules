@@ -1,0 +1,30 @@
+{
+    "name": "Validation Autofill",
+    "namespace": "validation_autofill_env\\validation_autofill",
+    "description": "This module delivers will fill out checkboxes, reference fields, and other necesary fields for REDCap validation scripts (.docx)",
+    "authors": [
+        {
+            "name": "Rick Watts",
+            "email": "rick.watts@ualberta.ca",
+            "institution": "University of Alberta - WCHRI"
+        },
+        {
+            "name": "Kyle Androschuk",
+            "email": "kandrosc@ualberta.ca",
+            "institution": "University of Alberta - WCHRI"
+        }
+    ],
+    "permissions": [
+        "redcap_module_system_disable"
+    ],
+    "links": {
+        "project": [
+            {
+                "name": "Validation Autofill",
+                "icon": "folders_stack",
+                "url": "menu.php"
+
+            }
+        ]
+    }
+}

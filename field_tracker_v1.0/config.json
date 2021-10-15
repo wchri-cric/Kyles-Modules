@@ -1,0 +1,57 @@
+{
+   "name": "Field Tracker",
+   "namespace": "field_trackerNamespace\\field_tracker",
+   "description": "This module will display statistics regarding specified fields over the life of a project.",
+   "authors": [
+       {
+            "name": "Kyle Androschuk",
+            "email": "kandrosc@ualberta.ca",
+            "institution": "WCHRI - University of Alberta"
+        }
+    ],
+
+   "permissions": [
+	"redcap_save_record",
+        "redcap_module_project_enable",
+        "redcap_module_project_disable",
+        "redcap_module_system_disable",
+	"redcap_every_page_top"
+    ],
+
+"links": {
+      "project": [
+         {
+            "name": "Field Tracker",
+            "icon": "statistics",
+            "url": "tracker_menu.php"
+         }
+      ]
+   },
+"project-settings":[
+	{
+		"key":"enrollment_date",
+		"name":"Enrollment Date",
+		"required":false,
+		"type":"field-list"
+	},
+	{
+                "key":"site_location",
+                "name":"Site Location",
+                "required":false,
+                "type":"field-list"
+        },
+	{
+                "key":"project_completion",
+                "name":"Project Completion",
+                "required":false,
+                "type":"field-list"
+        },
+	{
+                "key":"withdrawal_reason",
+                "name":"Withdrawl Reason",
+                "required":false,
+                "type":"field-list"
+        }
+]
+
+}

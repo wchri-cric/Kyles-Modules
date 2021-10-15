@@ -1,0 +1,67 @@
+{
+   "name": "COVID Entry Log",
+   "namespace": "covid_entry_logNamespace\\covid_entry_log",
+   "description": "This module is used to keep track of how many people are in a lab.",
+   "authors": [
+       {
+            "name": "Kyle Androschuk",
+            "email": "kandrosc@ualberta.ca",
+            "institution": "WCHRI - University of Alberta"
+        }
+    ],
+
+"project-settings":[
+        {
+                "key":"lab_name",
+                "name":"Lab Name",
+                "required":true,
+                "type":"text"
+        },
+	{
+		"key":"capacity",
+		"name":"Max People Allowed In Lab",
+		"required":true,
+		"type":"custom",
+		"source":"validate.js"
+	},
+
+	{
+                "key":"alert_all",
+                "name":"Alert all users in lab",
+                "required":true,
+                "type":"checkbox"
+        },
+
+        {
+                "key":"alert_selected",
+                "name":"Alert Manager / Supervisor Email",
+                "required":true,
+                "type":"checkbox"
+        },
+
+        {
+                "key":"mngr_email",
+                "name":"Lab Manager / Supervisor Email",
+                "required":true,
+                "type":"email"
+        },
+        {
+                "key":"excluded_users",
+                "name":"Excluded Users",
+                "required":false,
+                "type":"email",
+		"repeatable":true
+        }
+],
+
+"crons": [
+      {
+        "cron_name": "check_capacity",
+        "cron_description": "Every 15 minutes, check and see if lab is over capacity",
+        "method": "checkCapacity",
+        "cron_frequency": "900",
+	"cron_max_run_time":"1200"
+      }
+]
+
+}
